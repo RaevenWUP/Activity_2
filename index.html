@@ -4,29 +4,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Login</title>
-        
-    </head>
 
+        <style>
+    
+            #txtUsername {
+                color: red;
+                font-size: large;
+            }
+            
+            .redText{
+                color: purple;
+                font-size: large;
+            }
+            input{
+             margin: 1rem;
+            }
+            #buttonLogin:hover{
+                cursor: pointer;
+                background-color: #bebebe;
+                color: green;
+                font-size: large;
+            }
+            #buttonLogin {
+                color: red;
+                font-size: large;
+            }
+            
+            
+                
+            </style>
+    </head>
+   
+    
+      
+        
+            
+        
     <body>
         <div style="text-align: center;">
         <h1>Login</h1>
-        <input type="text" placeholder="Username">
-        <input type="text" placeholder="Password">
+        <input type="text" placeholder="Username" class="redText">
+        <input type="text" placeholder="Password" class="redText">
         <div style="margin-top: 1rem;">
         <button id="buttonLogin" onclick="alert('Login has been clicked.')">Login</button>
         </div>
         </div>
     </body>
-    
     <script>
-        // dito na papasok javascript
-        alert("Hello World!");
-        // i dedeclare variables
-        // pwedeng gamitin yung let / var
-        let btnLogin = document.querySelector("#buttonLogin");
-        btnLogin.onclick = function (){
-            alert('Login has been clicked.')
+        console.log("Hello World");
+        // declaring variable
+        // let / var 
+        let buttonLogin = document.getElementsByName('#btnLogin');
+        buttonLogin.onclick = function () {
+            alert("Salamat Mabuhay ka hanggat gusto mo!")
         };
     </script>
+    
 
 </html>
